@@ -93,3 +93,5 @@ export interface LevelConfig {
   speedMultiplier: number;
   hazardType: 'asteroids' | 'debris' | 'mixed';
 }
+
+export type GameDifficulty = "easy" | "normal" | "hard" | "insane";
