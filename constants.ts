@@ -38,3 +38,5 @@ export const DEFAULT_LEVEL_CONFIG = {
 } as const;
 
 // Difficulty speed scaling adjustment 6
+
+// Difficulty speed scaling adjustment 7
