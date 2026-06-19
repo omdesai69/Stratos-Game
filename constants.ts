@@ -36,3 +36,5 @@ export const DEFAULT_LEVEL_CONFIG = {
   speedMultiplier: 1.0,
   hazardType: 'mixed'
 } as const;
+
+// Difficulty speed scaling adjustment 6
