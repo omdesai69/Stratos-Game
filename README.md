@@ -31,14 +31,6 @@ Stratos is a visually stunning, browser-based endless runner where you pilot an 
 - **🛸 Dynamic Hazards:** Beyond simple asteroids, survive targeted Homing Mines and massive vertical Laser Beams that force split-second tactical maneuvering.
 - **📱 Mobile & Desktop Ready:** Fluid 60 FPS Canvas rendering that plays perfectly via Keyboard, or via responsive touch-controls on mobile devices (via Capacitor).
 
-<br/>
-
-### 📸 Screenshots
-
-| Deep Space Navigation | Warp Sequence | Homing Mine Encounter | Near Miss Mechanics |
-| :---: | :---: | :---: | :---: |
-| <img src="Stratos_Photos/gameplay1.png" alt="Gameplay 1" width="250" /> | <img src="Stratos_Photos/gameplay2.png" alt="Gameplay 2" width="250" /> | <img src="Stratos_Photos/gameplay3.png" alt="Gameplay 3" width="250" /> | <img src="Stratos_Photos/gameplay1.png" alt="Gameplay 4" width="250" /> |
-
 ---
 
 ## 🛠 Tech Stack
