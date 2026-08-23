@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🌌 Stratos</h1>
+  <h1>Stratos</h1>
   <p><strong>A High-Speed, Procedural Sci-Fi Obstacle Avoidance Game</strong></p>
 
   [![React](https://img.shields.io/badge/React-19.0.0-blue.svg?style=flat&logo=react)](https://react.dev/)
@@ -12,37 +12,37 @@
 
 <br/>
 
-Stratos is a visually stunning, browser-based endless runner where you pilot an advanced spacecraft through procedurally generated cosmic hazards. Dodge asteroids, navigate nebulas, outmaneuver homing mines, and survive massive laser grids to see how far you can travel into deep space.
+Stratos is a high-performance, browser-based endless runner where you pilot an advanced spacecraft through procedurally generated cosmic hazards. Dodge asteroids, navigate nebulas, outmaneuver homing mines, and survive massive laser grids to see how far you can travel into deep space.
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
-**Play the game instantly in your browser:**  
-🔗 **[https://stratos-opal.vercel.app](https://stratos-opal.vercel.app)**
-
----
-
-## ✨ Key Features
-
-- **⚡ Procedural Level Generation:** AI-driven level progression via Google Gemini creates infinite, uniquely named sectors with scaling difficulty, speed, and obstacle density.
-- **🌠 Parallax Backgrounds & Immersive VFX:** Beautiful multi-layered starry backgrounds, dynamic screen shakes, pulsing thrusters, and shockwaves create a deeply engaging visual experience.
-- **🎯 Near-Miss Combo System:** High-risk, high-reward gameplay. Brush closely past asteroids to trigger "NEAR MISS" combos, multiplying your score and keeping adrenaline high.
-- **🛸 Dynamic Hazards:** Beyond simple asteroids, survive targeted Homing Mines and massive vertical Laser Beams that force split-second tactical maneuvering.
-- **📱 Mobile & Desktop Ready:** Fluid 60 FPS Canvas rendering that plays perfectly via Keyboard, or via responsive touch-controls on mobile devices (via Capacitor).
+**Play the game in your browser:**  
+[https://stratos-opal.vercel.app](https://stratos-opal.vercel.app)
 
 ---
 
-## 🛠 Tech Stack
+## Key Features
+
+- **Procedural Level Generation:** AI-driven level progression via Google Gemini creates infinite sectors with scaling difficulty, speed, and obstacle density.
+- **Parallax Backgrounds & VFX:** Multi-layered starry backgrounds, dynamic screen shakes, pulsing thrusters, and shockwaves create an immersive visual experience.
+- **Near-Miss Combo System:** High-risk, high-reward scoring. Brush closely past obstacles to trigger Near Miss score multipliers.
+- **Dynamic Hazards:** Survive targeted Homing Mines and vertical Laser Beams requiring split-second tactical maneuvering.
+- **Cross-Platform:** Fluid 60 FPS HTML5 Canvas rendering optimized for keyboard and mobile touch controls (via Capacitor).
+
+---
+
+## Tech Stack
 
 **Frontend & Engine**
 - **Framework:** React 19 + Vite
-- **Rendering:** HTML5 `<canvas>` via React `useRef` for ultra-fast 60fps draw cycles without DOM overhead
-- **Styling & UI:** Tailwind CSS for the HUD, Menus, and overlay components
+- **Rendering:** HTML5 `<canvas>` via React `useRef` for 60fps draw cycles without DOM overhead
+- **Styling & UI:** Tailwind CSS for HUD, menus, and overlays
 - **Internationalization:** `i18next` and `react-i18next`
 
 **Procedural Generation & AI**
-- **Integration:** Google Gemini GenAI SDK (`@google/genai`) to generate unique mission names, color themes, and obstacle densities dynamically.
+- **Integration:** Google Gemini GenAI SDK (`@google/genai`) to generate mission names, color themes, and obstacle densities dynamically.
 
 **Build & Mobile**
 - **Tooling:** Vite, TypeScript
@@ -50,18 +50,18 @@ Stratos is a visually stunning, browser-based endless runner where you pilot an 
 
 ---
 
-## 🏗 Architecture Overview & "How it Works"
+## Architecture Overview
 
-Stratos avoids traditional heavy game engines like Unity or Phaser in favor of a **React + Canvas Architecture**.
+Stratos uses a decoupled **React + Canvas Architecture**:
 
-1. **The Game Loop:** A single `requestAnimationFrame` loop handles all physics, collision, and rendering independently of React's state cycle, ensuring zero frame drops.
-2. **React's Role:** React acts purely as the state manager for the UI Overlay (Health, Score, Combo, Menus), communicating with the Canvas via strict callbacks.
-3. **Optimized Rendering:** Particles and objects are pooled using memory-efficient array buffering, and complex shapes (like asteroids) are pre-rendered to an off-screen cache canvas to drastically reduce GPU draw calls.
-4. **Adaptive Controls:** The engine automatically detects touch vs. keyboard input, smoothing vector velocities to provide tight, responsive control on any device.
+1. **The Game Loop:** A single `requestAnimationFrame` loop handles physics, collision, and rendering independently of React state cycles.
+2. **React UI Layer:** React manages UI Overlays (Health, Score, Combo, Menus) and communicates with the Canvas via strict callbacks.
+3. **Optimized Rendering:** Particles and objects are pooled using pre-allocated array buffering; complex shapes are pre-rendered to an off-screen cache canvas to reduce draw calls.
+4. **Adaptive Controls:** Input engine automatically detects touch vs. keyboard input and applies vector smoothing.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 1. **Install dependencies:**
    ```bash
@@ -71,6 +71,4 @@ Stratos avoids traditional heavy game engines like Unity or Phaser in favor of a
    ```bash
    npm run dev
    ```
-3. Open `http://localhost:3000` to play!
-
-*(Note: Never run `npm install` while the Vite dev server is actively running!)*
+3. Open `http://localhost:3000` to run the game locally.
